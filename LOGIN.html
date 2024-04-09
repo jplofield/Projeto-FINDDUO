@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FINDDUO - LOGIN</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    body {
+        font-family: "Inter", sans-serif;
+    background-color: black;
+    background-image: url("./img/Fundo_ME.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        top: 120px;
+        z-index: -1;
+    }
+
+    .login-form {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+		height: 560px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-form h2 {
+        margin-bottom: 30px;
+    }
+
+    .login-inputs {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .login-inputs input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .login-button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-button img {
+        margin-right: 10px;
+    }
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+
+    .image-container {
+        width: 50%;
+        height: 100%;
+        background-image: url("./img/Tela\ carregamento_12.png");
+        background-size: contain;
+        background-position: center;
+    }
+    .container{
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 15px 15px 15px 15px;
+    border-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(white, white, white, 0.5);
+    position: absolute;
+    height: 108px;
+    width: 212.5vh;
+    overflow: hidden;
+    margin-top: auto;
+    margin-left: auto;
+    position: fixed;
+    
+}
+.container img {
+    height: 108px;
+    width: 100px;
+}
+#link{
+    position: relative; 
+    top: -47px;
+}
+#text{
+color: rgb(0, 0, 0);
+}
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  a:hover, a:active {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    position: relative;
+  }
+  #menu_link{
+    background-color: white;
+    padding: 0px;
+    border: 0px;
+    background-position: cover;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" id="menu_link"><img src="./img/logo escura.png" height="100" width="145" class="image-container"></a>
+        <a href="LOGIN.html" target="new" id="link">LOGIN</a>
+        <a href="CADASTRO.html" target="new" id="link">CADASTRO</a>
+        <a href="WIKI.html" target="new" id="link">WIKI</a>
+        <a  href="JOGADORES.html" target="new" id="link">JOGADORES</a>
+        <a  href="SUPORTE.HTML" target="new" id="link">SUPORTE</a>
+        </div>
+<div class="container2">
+    <form class="login-form">
+        <h2>ENTRAR</h2>
+        <div class="login-inputs">
+            <input type="text" placeholder="Nome de usuário ou email">
+        </div>
+        <div class="login-inputs">
+            <input type="password" placeholder="Senha">
+        </div>
+        <button type="submit" class="login-button">
+            Entrar
+        </button>
+    </form>
+    <div class="image-container"></div>
+</div>
+
+</body>
+</html>
