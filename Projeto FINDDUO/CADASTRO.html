@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FINDDUO - Cadastro</title>
+<meta charset = "UTF-8"> 
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+	body{
+		background-color: black;
+		font-family: "Inter", sans-serif;
+		color: white;
+    	background-image: url("./img/Fundo_ME.png");
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center center;
+    	background-attachment: fixed;
+	}
+	form {
+  		display: grid;
+		place-items: center;
+		position: relative;
+		top: 120px;
+	}
+	.container{
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 15px 15px 15px 15px;
+    border-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(white, white, white, 0.5);
+    position: absolute;
+    height: 108px;
+    width: 212.5vh;
+    overflow: hidden;
+    margin-top: auto;
+    margin-left: auto;
+    position: fixed;
+}
+.container img {
+    height: 108px;
+    width: 100px;
+}
+
+#link{
+    position: relative; 
+    top: -47px;
+}
+table{
+	border-collapse: collapse;
+	background-color: black;
+	z-index: -1;
+}
+h1{
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 120px;
+	z-index: -1;
+}
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  a:hover, a:active {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    position: relative;
+  }
+  #menu_link{
+    background-color: white;
+    padding: 0px;
+    border: 0px;
+    background-position: cover;
+  }
+</style>
+
+<body>
+	<div class="container">
+        <a href="index.html" id="menu_link"><img src="./img/logo escura.png" height="100" width="145" class="image-container"></a>
+        <a href="LOGIN.html" target="new" id="link">LOGIN</a>
+        <a href="CADASTRO.html" target="new" id="link">CADASTRO</a>
+        <a href="WIKI.html" target="new" id="link">WIKI</a>
+        <a  href="JOGADORES.html" target="new" id="link">JOGADORES</a>
+        <a  href="SUPORTE.HTML" target="new" id="link">SUPORTE</a>
+        </div>
+
+<h1>CADASTRE-SE</h1>
+<form>
+	
+	<table border = 2>
+	
+	<tr>
+	
+		<th colspan = 2>Dados</th>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Nome : </td>
+		<td><input type ="text" name = "txtnome" size  = "40" maxlength = "100" placeholder = "Informe seu nome"></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Enderenço de email : </td>
+		<td><input type = "email"    name = "emlEmail"       size  = "40" maxlength = "100"></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Confirme seu email : </td>
+		<td><input type = "email"    name = "emlEmail"       size  = "40" maxlength = "100"></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Nova senha : </td>
+		<td><input type = "password" name = "txtsenha"       size = 20 maxlength = 20 placeholder = "Informe sua Senha"></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Confirmar nova senha : </td>
+		<td><input type = "password" name = "txtsenha"  size = 20 maxlength = 20></td>
+	
+	</tr>
+	
+	<tr>
+    <td>País de residência : </td>
+    <td>
+        <select name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="eua">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="reinounido">Reino Unido</option>
+			<option value="russia">Rússia</option>
+			<option value="china">China</option>
+			<option value="alemanha">Alemanha</option>
+			<option value="australia">Austrália</option>
+			<option value="frança">França</option>
+			<option value="coreiadosul">Coreia do Sul</option>
+        </select>
+    </td>
+</tr>
+
+	
+	<tr>
+	
+		<td>Data de Nascimento : </td>
+		<td><input type = "date"     name = "dtedata"></td>
+	
+	</tr>
+	
+	<tr>
+	
+		<td>Celular : </td>
+		<td><input type ="text" name = "txtcelular" size  = "15" placeholder = "Informe seu celular"></td>
+		
+	</tr>
+	
+	<tr>
+			<td>Selecione uma cor para o seu perfil : </td>
+			<td><input type = "color"    name = "clrCor" 		 value = "#FF0000"></td>
+	</tr>
+	
+	<tr>
+			<td>Selecione uma foto : </td>
+			<td><input type = "file"     name = "fleArquivo"></td>
+	</tr>
+	
+	<tr>
+	
+		<td>Quais gêneros de jogos você mais gosta ? </td>
+		<td><input type = "checkbox" name = "ckbtipos" value = "AÇÃO E AVENTURA">Ação e Aventura </br>
+			<input type = "checkbox" name = "ckbtipos" value = "SHOOTER">Shooter (Tiro em primeira ou terceira pessoa) </br>
+			<input type = "checkbox" name = "ckbtipos" value = "RPG">RPG (Role-Playing Game) </br>
+			<input type = "checkbox" name = "ckbtipos" value = "ESPORTES">Esportes </br>
+			<input type = "checkbox" name = "ckbtipos" value = "BATTLE ROYALE">Battle Royale </br>
+			<input type = "checkbox" name = "ckbtipos" value = "MOBA">Moba (Multiplayer Online Battle Arena) </br>
+			<input type = "checkbox" name = "ckbtipos" value = "SURVIVAL"> Survival (Jogos de sobrevivência) </br>
+		</td>
+	
+	</tr>
+	
+	<tr> 
+			<th colspan = 3>
+				<input type = "submit" name = "btnEnviar" value = "Cadastrar">
+				<input type=  "reset"  name=  "btnLimpar" value ="Limpar">
+			</th>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
